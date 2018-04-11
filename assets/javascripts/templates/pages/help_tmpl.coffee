@@ -193,59 +193,64 @@ app.templates.helpPage = ->
       か<code class="_label">js</code>と入れるよりも、<code class="_label">タブ</code>。<br>
       For example, to search the JavaScript documentation, enter <code class="_label">javascript</code>
       or <code class="_label">js</code>, then <code class="_label">tab</code>.<br>
+      正確な範囲で、空のサーチ部分に<code class="_label">バックスペース</code>または、
+      <code class="_label">esc</code>。
       To clear the current scope, empty the search field and hit <code class="_label">backspace</code> or
       <code class="_label">esc</code>.
     <dt id="url_search">Prefilling the search field
     <dd>
+
       The search can be prefilled from the URL by visiting <a href="/#q=keyword" target="_top">devdocs.io/#q=keyword</a>.
-      Characters after <code class="_label">#q=</code> will be used as search query.<br>
-      To search a single documentation, add its name (or an abbreviation) and a space before the keyword:
+      <code class="_label">#q=</code>以降はサーチクエリが使用されています。
+      一つのドキュメント内の検索で、名前（または、略語）を追加したり、キーワードの前にスペースを入れます：
       <a href="/#q=js%20date" target="_top">devdocs.io/#q=js date</a>.
-    <dt id="browser_search">Searching using the address bar
+    <dt id="browser_search">アドレスバーを検索に使う
     <dd>
-      DevDocs supports OpenSearch. It can easily be installed as a search engine on most web browsers:
+      DevDocsはオープンサーチをサポートしています。webブラウザのサーチエンジンのように、簡単にインストールできます。
       <ul>
+        <li>Chromeでは、自動的にセットアップします、devdocs.io
         <li>On Chrome, the setup is done automatically. Simply press <code class="_label">tab</code> when devdocs.io is autocompleted
             in the omnibox (to set a custom keyword, click <em>Manage search engines\u2026</em> in Chrome's settings).
         <li>On Firefox, right-click the DevDocs search field and select <em>Add a Keyword for this Search…</em>. Then, type the added keyword followed by a query in the address bar to search DevDocs.
   </dl>
   <p>
+    <i>ノート：サーチは有効なドキュメントでのみ動作します。</i>
     <i>Note: the above search features only work for documentations that are enabled.</i>
 
-  <h2 class="_block-heading" id="shortcuts">Keyboard Shortcuts</h2>
-  <h3 class="_shortcuts-title">Sidebar</h3>
+  <h2 class="_block-heading" id="shortcuts">キーボードショートカット</h2>
+  <h3 class="_shortcuts-title">サイドバー</h3>
   <dl class="_shortcuts-dl">
     <dt class="_shortcuts-dt">
       <code class="_shortcut-code">&darr;</code>
       <code class="_shortcut-code">&uarr;</code>
-    <dd class="_shortcuts-dd">Move selection
+    <dd class="_shortcuts-dd">セレクションの移動
     <dt class="_shortcuts-dt">
       <code class="_shortcut-code">&rarr;</code>
       <code class="_shortcut-code">&larr;</code>
-    <dd class="_shortcuts-dd">Show/hide sub-list
+    <dd class="_shortcuts-dd">サブリストの表示/非表示
     <dt class="_shortcuts-dt">
       <code class="_shortcut-code">enter</code>
-    <dd class="_shortcuts-dd">Open selection
+    <dd class="_shortcuts-dd">セレクションを開く
     <dt class="_shortcuts-dt">
       <code class="_shortcut-code">#{ctrlKey} + enter</code>
-    <dd class="_shortcuts-dd">Open selection in a new tab
+    <dd class="_shortcuts-dd">セレクションを新しいタブで開く
     <dt class="_shortcuts-dt">
       <code class="_shortcut-code">alt + r</code>
     <dd class="_shortcuts-dd">Reveal current page in sidebar
   </dl>
-  <h3 class="_shortcuts-title">Browsing</h3>
+  <h3 class="_shortcuts-title">ブラウジング</h3>
   <dl class="_shortcuts-dl">
     <dt class="_shortcuts-dt">
       <code class="_shortcut-code">#{navKey} + &larr;</code>
       <code class="_shortcut-code">#{navKey} + &rarr;</code>
-    <dd class="_shortcuts-dd">Go back/forward
+    <dd class="_shortcuts-dd">戻る/進む
     <dt class="_shortcuts-dt">
       <code class="_shortcut-code">alt + &darr;</code>
       <code class="_shortcut-code">alt + &uarr;</code>
       <br>
       <code class="_shortcut-code">shift + &darr;</code>
       <code class="_shortcut-code">shift + &uarr;</code>
-    <dd class="_shortcuts-dd">Scroll step by step<br><br>
+    <dd class="_shortcuts-dd">順にスクロールする<br><br>
     <dt class="_shortcuts-dt">
       <code class="_shortcut-code">space</code>
       <code class="_shortcut-code">shift + space</code>
@@ -253,7 +258,7 @@ app.templates.helpPage = ->
     <dt class="_shortcuts-dt">
       <code class="_shortcut-code">#{ctrlKey} + &uarr;</code>
       <code class="_shortcut-code">#{ctrlKey} + &darr;</code>
-    <dd class="_shortcuts-dd">Scroll to the top/bottom
+    <dd class="_shortcuts-dd">上部/下部にスクロールする
     <dt class="_shortcuts-dt">
       <code class="_shortcut-code">alt + f</code>
     <dd class="_shortcuts-dd">Focus first link in the content area<br>(press tab to focus the other links)
