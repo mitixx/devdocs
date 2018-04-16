@@ -261,33 +261,34 @@ app.templates.helpPage = ->
     <dd class="_shortcuts-dd">上部/下部にスクロールする
     <dt class="_shortcuts-dt">
       <code class="_shortcut-code">alt + f</code>
-    <dd class="_shortcuts-dd">Focus first link in the content area<br>(press tab to focus the other links)
+    <dd class="_shortcuts-dd">内容内の最初のリンクにフォーカスする<br>(press tab to focus the other links)
   </dl>
-  <h3 class="_shortcuts-title">App</h3>
+  <h3 class="_shortcuts-title">アプリ</h3>
   <dl class="_shortcuts-dl">
     <dt class="_shortcuts-dt">
       <code class="_shortcut-code">ctrl + ,</code>
-    <dd class="_shortcuts-dd">Open preferences
+    <dd class="_shortcuts-dd">設定を開く
     <dt class="_shortcuts-dt">
       <code class="_shortcut-code">esc</code>
-    <dd class="_shortcuts-dd">Clear search field / reset UI
+    <dd class="_shortcuts-dd">サーチフィールドをクリア/UIリセット
     <dt class="_shortcuts-dt">
       <code class="_shortcut-code">?</code>
-    <dd class="_shortcuts-dd">Show this page
+    <dd class="_shortcuts-dd">このページを見る
   </dl>
-  <h3 class="_shortcuts-title">Miscellaneous</h3>
+  <h3 class="_shortcuts-title">その他</h3>
   <dl class="_shortcuts-dl">
     <dt class="_shortcuts-dt">
       <code class="_shortcut-code">alt + o</code>
-    <dd class="_shortcuts-dd">Open original page
+    <dd class="_shortcuts-dd">オリジナルページを開く
     <dt class="_shortcuts-dt">
       <code class="_shortcut-code">alt + g</code>
-    <dd class="_shortcuts-dd">Search on Google
+    <dd class="_shortcuts-dd">Googleで検索する
     <dt class="_shortcuts-dt">
       <code class="_shortcut-code">alt + s</code>
-    <dd class="_shortcuts-dd">Search on Stack Overflow
+    <dd class="_shortcuts-dd">Stack Overflowで検索する
   </dl>
   <p class="_note _note-green">
+    <strong>Tip:</strong>サーチフィールドでカーソルが　たら、<code class="_label">/</code>を押すか、
     <strong>Tip:</strong> If the cursor is no longer in the search field, press <code class="_label">/</code> or
     continue to type and it will refocus the search field and start showing new results.
 
