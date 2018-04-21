@@ -289,6 +289,7 @@ app.templates.helpPage = ->
   </dl>
   <p class="_note _note-green">
     <strong>Tip:</strong>サーチフィールドでカーソルが　たら、<code class="_label">/</code>を押すか、
+    タイプを続けてサーチフィールドにリフォーカスすると新しい検索結果が表示されます。
     <strong>Tip:</strong> If the cursor is no longer in the search field, press <code class="_label">/</code> or
     continue to type and it will refocus the search field and start showing new results.
 
@@ -307,5 +308,6 @@ app.templates.helpPage = ->
       #{("<tr><td class=\"_code\">#{key}<td class=\"_code\">#{value}" for key, value of aliases_two).join('')}
     </table>
   </div>
+  <p>新しいエイリアスは<a href="https://github.com/freeCodeCamp/devdocs/issues/new">GitHub</a>で自由に提案できます。</p>
   <p>Feel free to suggest new aliases on <a href="https://github.com/freeCodeCamp/devdocs/issues/new">GitHub</a>.
 """
