@@ -116,34 +116,34 @@ app.templates.aboutPage = -> """
     <strong>Copyright 2013&ndash;2018 Thibaut Courouble and <a href="https://github.com/freeCodeCamp/devdocs/graphs/contributors">other contributors</a></strong><br>
     このソフトウェアはMozilla Public License v2.0に基づいてライセンスされています。<br>
     You may obtain a copy of the source code at <a href="https://github.com/freeCodeCamp/devdocs">github.com/freeCodeCamp/devdocs</a>.<br>
-    For more information, see the <a href="https://github.com/freeCodeCamp/devdocs/blob/master/COPYRIGHT">COPYRIGHT</a>
-    and <a href="https://github.com/freeCodeCamp/devdocs/blob/master/LICENSE">LICENSE</a> files.
+    詳しくは<a href="https://github.com/freeCodeCamp/devdocs/blob/master/COPYRIGHT">コピーライト</a>
+    や<a href="https://github.com/freeCodeCamp/devdocs/blob/master/LICENSE">ライセンス</a>をご覧ください。
 
-  <h2 class="_block-heading" id="plugins">Plugins and Extensions</h2>
+  <h2 class="_block-heading" id="plugins">プラグインと拡張</h2>
   <ul>
-    <li><a href="https://chrome.google.com/webstore/detail/devdocs/mnfehgbmkapmjnhcnbodoamcioleeooe">Chrome web app</a>
-    <li><a href="https://github.com/egoist/devdocs-app">Desktop app</a>
-    <li><a href="https://sublime.wbond.net/packages/DevDocs">Sublime Text package</a>
-    <li><a href="https://atom.io/packages/devdocs">Atom package</a>
-    <li><a href="https://marketplace.visualstudio.com/items?itemName=deibit.devdocs">Visual Studio Code extension</a>
+    <li><a href="https://chrome.google.com/webstore/detail/devdocs/mnfehgbmkapmjnhcnbodoamcioleeooe">Chrome web アプリ</a>
+    <li><a href="https://github.com/egoist/devdocs-app">デスクトップ　アプリ</a>
+    <li><a href="https://sublime.wbond.net/packages/DevDocs">Sublime Text パッケージ</a>
+    <li><a href="https://atom.io/packages/devdocs">Atom パッケージe</a>
+    <li><a href="https://marketplace.visualstudio.com/items?itemName=deibit.devdocs">Visual Studio Code 拡張</a>
     <li><a href="https://github.com/yannickglt/alfred-devdocs">Alfred workflow</a>
-    <li><a href="https://github.com/search?q=topic%3Adevdocs&type=Repositories">More…</a>
+    <li><a href="https://github.com/search?q=topic%3Adevdocs&type=Repositories">更に見る</a>
   </ul>
 
-  <h2 class="_block-heading" id="faq">Questions & Answers</h2>
+  <h2 class="_block-heading" id="faq">Q&A</h2>
   <dl>
-    <dt>Where can I suggest new docs and features?
-    <dd>You can suggest and vote for new docs on the <a href="https://trello.com/b/6BmTulfx/devdocs-documentation">Trello board</a>.<br>
+    <dt>どこで新しいドキュメントや機能を提案できますか？
+    <dd>新しいドキュメントは<a href="https://trello.com/b/6BmTulfx/devdocs-documentation">Trelloボード</a>で、提案・投票できます。<br>
         If you have a specific feature request, add it to the <a href="https://github.com/freeCodeCamp/devdocs/issues">issue tracker</a>.<br>
         Otherwise use the <a href="https://groups.google.com/d/forum/devdocs">mailing list</a>.
-    <dt>Where can I report bugs?
-    <dd>In the <a href="https://github.com/freeCodeCamp/devdocs/issues">issue tracker</a>. Thanks!
+    <dt>どこでバグの報告をできますか？
+    <dd><a href="https://github.com/freeCodeCamp/devdocs/issues">issue tracker</a>によろしくお願いします!
   </dl>
   <p>For anything else, feel free to email me at <a href="mailto:thibaut@devdocs.io">thibaut@devdocs.io</a>.
 
-  <h2 class="_block-heading" id="credits">Credits</h2>
+  <h2 class="_block-heading" id="credits">クレジット</h2>
 
-  <p><strong>Special thanks to:</strong>
+  <p><strong>特別感謝:</strong>
   <ul>
     <li><a href="https://out.devdocs.io/s/maxcdn">MaxCDN</a>, <a href="https://sentry.io/">Sentry</a> and <a href="https://get.gaug.es/?utm_source=devdocs&utm_medium=referral&utm_campaign=sponsorships" title="Real Time Web Analytics">Gauges</a> for offering a free account to DevDocs
     <li><a href="https://out.devdocs.io/s/maxcdn">MaxCDN</a>, <a href="https://out.devdocs.io/s/shopify">Shopify</a>, <a href="https://out.devdocs.io/s/jetbrains">JetBrains</a> and <a href="https://out.devdocs.io/s/code-school">Code School</a> for sponsoring DevDocs in the past
