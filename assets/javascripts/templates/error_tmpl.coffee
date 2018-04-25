@@ -74,3 +74,80 @@ app.templates.unsupportedBrowser = """
       &mdash; Thibaut <a href="https://twitter.com/DevDocs" class="_fail-link">@DevDocs</a>
   </div>
 """
+
+error = (title, text = '', links = '') ->
+  text = """<p class="_error-text">#{text}</p>""" if text
+  links = """<p class="_error-links">#{links}</p>""" if links
+  """<div class="_error"><h1 class="_error-title">#{title}</h1>#{text}#{links}</div>"""
+
+back = '<a href="#" data-behavior="back" class="_error-link">戻る</a>'
+
+app.templates.notFoundPage = ->
+  error """ ページが見つかりません。 """,
+        """ ドキュメントソースを誤っているか、バグかもしれません。 """,
+        back
+
+app.templates.pageLoadError = ->
+  error """ ページの読み込みが失敗しました。 """,
+        """ サーバーを誤っています。（アプリを再度読み込んでください）または、オフラインです。<br>
+            この表示が続くようであれば、プロキシの制限やファイヤーウォールでクロスドメインリクエストがブロックされています。 """,
+        """ #{back} &middot; <a href="/##{location.pathname}" target="_top" class="_error-link">再読み込み</a>
+            &middot; <a href="#" class="_error-link" data-retry>Retry</a> """
+
+app.templates.bootError = ->
+  error """ アプリの読み込みに失敗しました。 """,
+        """ インターネット接続を確認してください。<a href="#" data-behavior="reload">再読み込み</a>してください。<br>
+            この表示が続くようであれば、プロキシの制限やファイヤーウォールでクロスドメインリクエストがブロックされています。 """
+
+app.templates.offlineError = (reason, exception) ->
+  if reason is 'cookie_blocked'
+    return error """ オフラインモードを使用してクッキーを有効にする必要があります。 """
+
+  reason = switch reason
+    when 'not_supported'
+      """Devdocsはオフラインアクセスのために、IndexedDBにキャッシュすることを要求しています。<br>
+          あいにく、お使いのブラウザはIndexedDBかキャッシュの作成いずれかが非対応です。"""
+    when 'buggy'
+      """Devdocsはオフラインアクセスのために、IndexedDBにキャッシュすることを要求しています。<br>
+          あいにく、お使いのブラウザはIndexedDB containsの実行バグを防いでいます。"""
+    when 'private_mode'
+      """ ブラウザのプライベートモードで表示しています。<br>
+          オフラインアクセスによってドキュメントのキャッシュが防止されています。"""
+    when 'exception'
+      """IndexDBデータベースを開く際にエラーが起きています。:<br>
+          <code class="_label">#{exception.name}: #{exception.message}</code> """
+    when 'cant_open'
+      """IndexDBデータベースを開く際にエラーが起きています。:<br>
+          <code class="_label">#{exception.name}: #{exception.message}</code><br>
+          お使いのブラウザはプライベートモードかオフラインストレージを許可していないため、許可しましょう。"""
+    when 'version'
+      """IndexedDBデータベースはアプリの新しいバージョンに修正されています。<br>
+          <a href="#" data-behavior="reload">ページ再読み込み</a> して、オフラインモードを使ってください。 """
+    when 'empty'
+      """IndexedDBデータベースに誤りがあります。 <a href="#" data-behavior="reset">アプリをリセット</a>してみてください。 """
+
+  error 'Offline mode is unavailable.', reason
+
+app.templates.unsupportedBrowser = """
+  <div class="_fail">
+    <h1 class="_fail-title">申し訳ございませんが、ご使用のブラウザはサポートされていません。</h1>
+    <p class="_fail-text">DevDocsがサポートしているブラウザ:
+    <ul class="_fail-list">
+      <li>Chrome と Firefox　の最新バージョン
+      <li>Safari 5.1 以上
+      <li>Opera 12.1　以上
+      <li>Internet Explorer 10　以上
+      <li>iOS 6 以上
+      <li>Android 4.1 以上
+      <li>Windows Phone 8　以上
+    </ul>
+    <p class="_fail-text">
+      もしアップグレードできない場合は、申し訳ございません。
+      古いブラウザにとって速く、新しい機能や、サポートの延長を優先で決定します。
+    <p class="_fail-text">
+      ノート：もし既にお使いのブラウザのバージョンが超えていれば、設定やアドオンを確認してください。
+      アプリはブラウザを判別しています、ユーザーエージェントを参照していません。
+    <p class="_fail-text">
+      &mdash; Thibaut <a href="https://twitter.com/DevDocs" class="_fail-link">@DevDocs</a>
+  </div>
+"""
