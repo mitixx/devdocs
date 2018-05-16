@@ -35,27 +35,27 @@ module Docs
     HTML
 
     version '2.0' do
-      self.release = '2.0.2'
+      self.release = '2.0'
       self.dir = '/Users/Thibaut/DevDocs/Docs/Django20'
-      self.base_url = 'https://docs.djangoproject.com/en/2.0/'
+      self.base_url = 'https://docs.djangoproject.com/ja/2.0/'
     end
 
     version '1.11' do
-      self.release = '1.11.9'
+      self.release = '1.11'
       self.dir = '/Users/Thibaut/DevDocs/Docs/Django111'
-      self.base_url = 'https://docs.djangoproject.com/en/1.11/'
+      self.base_url = 'https://docs.djangoproject.com/ja/1.11/'
     end
 
     version '1.10' do
-      self.release = '1.10.8'
+      self.release = '1.10'
       self.dir = '/Users/Thibaut/DevDocs/Docs/Django110'
-      self.base_url = 'https://docs.djangoproject.com/en/1.10/'
+      self.base_url = 'https://docs.djangoproject.com/ja/1.10/'
     end
 
     version '1.9' do
-      self.release = '1.9.13'
+      self.release = '1.9'
       self.dir = '/Users/Thibaut/DevDocs/Docs/Django19'
-      self.base_url = 'https://docs.djangoproject.com/en/1.9/'
+      self.base_url = 'https://docs.djangoproject.com/ja/1.9/'
     end
 
     version '1.8' do
@@ -65,3 +65,5 @@ module Docs
     end
   end
 end
+
+#version1.8 hasn't Japanese ver = 日本語非対応
