@@ -23,7 +23,7 @@ module Docs
 
     version '17' do
       self.release = '17.06'
-      self.base_url = 'https://docs.docker.com/'
+      self.base_url = 'http://docs.docker.jp/'
 
       html_filters.push 'docker/entries', 'docker/clean_html'
 
@@ -118,7 +118,7 @@ module Docs
       include OldOptions
 
       self.release = '1.11'
-      self.base_url = "https://docs.docker.com/v#{self.version}/"
+      self.base_url = "http://docs.docker.jp/v#{self.version}/"
 
       html_filters.push 'docker/entries_very_old', 'docker/clean_html_very_old'
 
@@ -130,7 +130,7 @@ module Docs
       include OldOptions
 
       self.release = '1.10'
-      self.base_url = "https://docs.docker.com/v#{self.version}/"
+      self.base_url = "http://docs.docker.jp/v#{self.version}/"
 
       html_filters.push 'docker/entries_very_old', 'docker/clean_html_very_old'
 
@@ -139,3 +139,5 @@ module Docs
     end
   end
 end
+
+# Japanese doc has only version 17 & 1.11 & 1.10. Other version hasn't.
